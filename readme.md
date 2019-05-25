@@ -2,6 +2,10 @@
 
 Instructions for automated installation of laptop script
 
+## Requirements
+
+- Git
+
 ## Installation steps
 
 1. [rodrigobdz/dotfiles-local](https://github.com/rodrigobdz/dotfiles-local)
