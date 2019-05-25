@@ -1,4 +1,4 @@
-# Laptop
+# meta-laptop
 
 Automated installation of laptop script and dotfiles
 
