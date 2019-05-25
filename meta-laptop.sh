@@ -6,14 +6,15 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
+readonly GITHUB_USER=${1:-rodrigobdz}
+
 fetch_local_dotfiles() {
   git clone "https://github.com/$GITHUB_USER/dotfiles-local" ~/dotfiles-local
 }
 
-install_dotfiles() {
-  chsh -s "$(command -bv zsh)"
+fetch_dotfiles() {
+  chsh -s "$(command -v zsh)"
   git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
-  env RCRC="$HOME/dotfiles/rcrc" rcup
 }
 
 install_laptop() {
@@ -22,10 +23,15 @@ install_laptop() {
   sh mac 2>&1 | tee ~/laptop.log
 }
 
+install_dotfiles() {
+  env RCRC="$HOME/dotfiles/rcrc" rcup
+}
+
 main() {
   fetch_local_dotfiles
-  install_dotfiles
+  fetch_dotfiles
   install_laptop
+  install_dotfiles
 }
 
 main "$@"
