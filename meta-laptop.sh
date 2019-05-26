@@ -6,14 +6,14 @@ set -o errexit
 set -o pipefail
 set -o nounset
 
-readonly GITHUB_USER=${1:-rodrigobdz}
+readonly GITHUB_USER=rodrigobdz
+readonly DEV_DIR=~/developer
 
 fetch_local_dotfiles() {
   git clone "https://github.com/$GITHUB_USER/dotfiles-local" ~/dotfiles-local
 }
 
 fetch_dotfiles() {
-  chsh -s "$(command -v zsh)"
   git clone git://github.com/thoughtbot/dotfiles.git ~/dotfiles
 }
 
