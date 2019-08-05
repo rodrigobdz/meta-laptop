@@ -19,7 +19,7 @@ fetch_dotfiles() {
 
 install_laptop() {
   mkdir -p "$DEV_DIR" && cd "$DEV_DIR"
-  curl --remote-name https://raw.githubusercontent.com/rodrigobdz/laptop/master/mac
+  curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
   sh mac 2>&1 | tee ~/laptop.log
 }
 
