@@ -7,7 +7,6 @@ Automated installation of laptop script and dotfiles
 1. [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles)
 1. [rodrigobdz/dotfiles-local](https://github.com/rodrigobdz/dotfiles-local)
 1. [thoughtbot/laptop](https://github.com/thoughtbot/laptop)
-1. [rodrigobdz/laptop-local](https://github.com/rodrigobdz/laptop-local)
 
 ## Requirements
 
