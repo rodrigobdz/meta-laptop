@@ -13,18 +13,18 @@ fetch_local_dotfiles() {
   git clone git@github.com:"$GITHUB_USER"/dotfiles-local.git ~/dotfiles-local
 }
 
-install_laptop() {
-  mkdir -p "$DEV_DIR" && cd "$DEV_DIR"
-  curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
-  sh mac 2>&1 | tee ~/laptop.log
-}
-
 fetch_dotfiles() {
   git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
 }
 
 install_dotfiles() {
   env RCRC="$HOME/dotfiles/rcrc" rcup
+}
+
+install_laptop() {
+  mkdir -p "$DEV_DIR" && cd "$DEV_DIR"
+  curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
+  sh mac 2>&1 | tee ~/laptop.log
 }
 
 main() {
