@@ -10,11 +10,11 @@ readonly GITHUB_USER=rodrigobdz
 readonly DEV_DIR=~/dev
 
 fetch_local_dotfiles() {
-  git clone git@github.com/"$GITHUB_USER"/dotfiles-local.git ~/dotfiles-local
+  git clone git@github.com:"$GITHUB_USER"/dotfiles-local.git ~/dotfiles-local
 }
 
 fetch_dotfiles() {
-  git clone git@github.com/thoughtbot/dotfiles.git ~/dotfiles
+  git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
 }
 
 install_laptop() {
