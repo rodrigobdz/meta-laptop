@@ -48,7 +48,21 @@ Automated installation of laptop script and dotfiles
 
 1. Laptop script is known to fail in this [LOC](https://github.com/thoughtbot/laptop/blob/c3d5a26bfa0a506337f937c249ee8bc3a6853cb6/mac#L196). Continue with laptop.local.
 
-1. Manually install: VSCode, Signal.
+1. Manually install: VSCode, Signal, Zoom.
+
+1. iTerm2: _Make iTerm Default Term_ and _Install Shell Integration_.
+
+1. VSCode: Sign and Turn on Settings Sync
+
+1. Alfred: Set preferences folder to folder with Alfred.alfredpreferences
+
+1. Sublime: Install package control using command palette and then restore preferences using Dropbox/config/Sublime/INSTRUCTIONS.md
+
+1. fish: Install abbreviations using export_abbreviations.fish script from backup
+
+1. SourceTree: Install custom actions from config/sourcetree folder
+
+1. Restore backup from Time Machine
 
 ## Credits
 
