@@ -13,14 +13,14 @@ fetch_local_dotfiles() {
   git clone git@github.com:"$GITHUB_USER"/dotfiles-local.git ~/dotfiles-local
 }
 
-fetch_dotfiles() {
-  git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
-}
-
 install_laptop() {
   mkdir -p "$DEV_DIR" && cd "$DEV_DIR"
   curl --remote-name https://raw.githubusercontent.com/thoughtbot/laptop/master/mac
   sh mac 2>&1 | tee ~/laptop.log
+}
+
+fetch_dotfiles() {
+  git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
 }
 
 install_dotfiles() {
@@ -30,8 +30,8 @@ install_dotfiles() {
 main() {
   fetch_local_dotfiles
   fetch_dotfiles
-  install_laptop
   install_dotfiles
+  install_laptop
 }
 
 main "$@"
