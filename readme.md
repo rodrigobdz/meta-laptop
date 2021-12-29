@@ -38,6 +38,16 @@ Automated installation of laptop script and dotfiles
     less ~/meta-laptop.log
     ```
 
+1. Remove `asdf`
+
+    ```sh
+    rm -rf ~/.asdf*
+    ```
+
+1. Remove `tpope/vim-rails` and `tpope/vim-rake` from [`~/.vimrc.bundles`](https://github.com/thoughtbot/dotfiles/blob/42a313bde1f4dc7a75cc276714008c77bf3821bf/vimrc.bundles#L40-L41) because [vim-plug](https://github.com/junegunn/vim-plug) doesn't offer an uninstall command to be used in vimrc.bundles.local, for instance.
+
+1. Laptop script is known to fail in this [LOC](https://github.com/thoughtbot/laptop/blob/c3d5a26bfa0a506337f937c249ee8bc3a6853cb6/mac#L196). Continue with laptop.local
+
 ## Credits
 
 - [minimal-readme](https://github.com/rodrigobdz/minimal-readme) - Minimal readme template
