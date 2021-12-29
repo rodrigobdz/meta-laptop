@@ -7,7 +7,7 @@ set -o pipefail
 set -o nounset
 
 readonly GITHUB_USER=rodrigobdz
-readonly DEV_DIR=~/developer
+readonly DEV_DIR=~/dev
 
 fetch_local_dotfiles() {
   git clone "https://github.com/$GITHUB_USER/dotfiles-local" ~/dotfiles-local
