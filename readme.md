@@ -62,6 +62,8 @@ Automated installation of laptop script and dotfiles
 
 1. SourceTree: Install custom actions from config/sourcetree folder
 
+1. npm: Check if installed, otherwise, install with `brew install node` and disable `npm_up` in up-mac
+
 1. Restore backup from Time Machine
 
 ## Credits
