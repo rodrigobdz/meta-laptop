@@ -48,7 +48,7 @@ Automated installation of laptop script and dotfiles
 
 1. Laptop script is known to fail in this [LOC](https://github.com/thoughtbot/laptop/blob/c3d5a26bfa0a506337f937c249ee8bc3a6853cb6/mac#L196). Continue with laptop.local.
 
-1. Manually install: VSCode, Signal, Zoom.
+1. Manually install: VSCode, Signal, Zoom, SourceTree.
 
 1. iTerm2: _Make iTerm Default Term_ and _Install Shell Integration_.
 
@@ -60,7 +60,11 @@ Automated installation of laptop script and dotfiles
 
 1. fish: Install abbreviations using export_abbreviations.fish script from backup
 
-1. SourceTree: Install custom actions from config/sourcetree folder
+1. SourceTree: Install custom actions from config/sourcetree folder. Also link `stree` binary using:
+
+   ```sh
+   sudo ln -s /Applications/Sourcetree.app/Contents/Resources/stree /usr/local/bin/stree
+   ```
 
 1. npm: Check if installed, otherwise, install with `brew install node` and disable `npm_up` in up-mac
 
