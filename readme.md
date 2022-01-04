@@ -71,6 +71,7 @@ Automated installation of laptop script and dotfiles
 1. Fonts: Install [Fura Powerline](https://github.com/powerline/fonts/tree/e80e3eba9091dac0655a0a77472e10f53e754bb0/FiraMono) and Fira Code
 
    1. Set iTerm2's font in profile > text to Fira Mono/Fura Powerline to support Powerline font
+   1. Set Fira Code size 11 to diff font in SourceTree's preferences.
 
 1. Restore backup from Time Machine
 
