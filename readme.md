@@ -75,6 +75,11 @@ Automated installation of laptop script and dotfiles
 
 1. Restore backup from Time Machine
 
+1. Trackpad:
+
+   1. Use four fingers instead of three for gestures in Trackpad settings.
+   1. Enable dragging with three fingers in System Preferences > Accessibility > Pointer Control > Mouse & Trackpad > Trackpad options
+
 ## Credits
 
 - [minimal-readme](https://github.com/rodrigobdz/minimal-readme) - Minimal readme template
