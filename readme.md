@@ -17,7 +17,7 @@ Automated installation of laptop script and dotfiles
 1. Download script
 
    ```sh
-   curl --remote-name https://raw.githubusercontent.com/rodrigobdz/meta-laptop/master/meta-laptop.sh
+   curl --remote-name https://raw.githubusercontent.com/rodrigobdz/meta-laptop/main/meta-laptop.sh
    ```
 
 1. Execute script
