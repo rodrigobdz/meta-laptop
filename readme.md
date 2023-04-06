@@ -66,7 +66,7 @@ Automated installation of laptop script and dotfiles
    sudo ln -s /Applications/Sourcetree.app/Contents/Resources/stree /usr/local/bin/stree
    ```
 
-1. npm: Check if installed, otherwise, install with `brew install node` and disable `npm_up` in up-mac
+1. npm: Check if installed, otherwise, install with `brew install node` and disable `npm_up` in [up-mac](https://github.com/rodrigobdz/up-mac)
 
 1. Fonts: Install [Fura Powerline](https://github.com/powerline/fonts/tree/e80e3eba9091dac0655a0a77472e10f53e754bb0/FiraMono) and Fira Code
 
